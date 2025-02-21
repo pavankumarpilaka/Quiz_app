@@ -1,0 +1,165 @@
+.container {
+    width: 90%; /* Occupy most of the screen width on mobile */
+    max-width: 440px; /* But limit to 440px on larger screens */
+    margin: 20px auto; /* Reduced margin for smaller screens */
+    background-color: white;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Slightly smaller gap */
+    border-radius: 10px;
+    padding: 20px; /* Reduced padding */
+    position: relative;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.container hr {
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+
+.container h2 {
+    font-size: 24px; /* Slightly smaller heading */
+    font-weight: 500;
+    text-align: center; /* Center the heading on mobile */
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    min-height: 50px; /* Ensure list items are tall enough */
+    padding: 10px; /* Reduced padding */
+    padding-left: 15px;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 18px; /* Slightly smaller font */
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    word-break: break-word; /* Prevent long words from overflowing */
+}
+
+.container ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.container button {
+    margin: 0 auto; /* Center the button */
+    width: 90%; /* Make button take full width on smaller screens */
+    max-width: 250px; /* But limit to 250px on larger screens */
+    height: 55px; /* Slightly smaller button */
+    background: #553f9a;
+    font-size: 20px; /* Slightly smaller font */
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.container button:hover {
+    background-color: #483582;
+}
+
+.container .index {
+    margin: 10px auto; /* Added some margin */
+    font-size: 16px; /* Slightly smaller font */
+    text-align: center; /* Center the index on mobile */
+}
+
+.container .correct {
+    background: #dffff2;
+    border-color: #00d397;
+}
+
+.container .wrong {
+    background: #ffebeb;
+    border-color: #ff4a4a;
+}
+
+.timer {
+    margin-top: 10px;
+    font-size: 14px; /* Slightly smaller font */
+    color: #333;
+    text-align: center;
+}
+
+.pie-chart-container {
+    position: relative;
+    width: 120px; /* Slightly smaller pie chart */
+    height: 120px; /* Slightly smaller pie chart */
+    margin: 15px auto; /* Reduced margin */
+}
+
+.pie-chart {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #00d397 var(--percentage, 0)deg,
+        #ff4a4a calc(var(--percentage, 0)deg + 0.1deg)
+    );
+    display: inline-block;
+}
+
+.pie-chart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em; /* Slightly smaller font */
+    font-weight: 500;
+}
+
+.numeric-question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.numeric-input {
+    width: 90%;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* ... (rest of the CSS) */
+
+.quiz-history {
+    margin-top: 15px; /* Reduced margin */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.quiz-history h2 {
+    font-size: 18px; /* Slightly smaller heading */
+    text-align: center;
+}
+
+.quiz-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quiz-history li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px; /* Slightly smaller font */
+    word-break: break-word; /* Prevent long words from overflowing */
+}
+
+.quiz-history li:last-child {
+    border-bottom: none;
+}
